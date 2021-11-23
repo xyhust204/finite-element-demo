@@ -24,6 +24,7 @@
             + 三维.txt
         + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>0+414断面
             + 0+414断面.txt
+            
 > ### 2.基本信息、材料参数、荷载
   数组material存放不同的本构模型参数，根据实际计算情况添加；数组materialName长度需和数组1-6长度一致；load表示荷载信息，name、vaule数组可动态添加，长度保持一致。
 
