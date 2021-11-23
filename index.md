@@ -1,4 +1,30 @@
-> ### 1.基本信息、材料参数、荷载
+> ### 1.文件提供说明
+ 需提供文件包括单文件或者文件夹形式的模型数据或2中json数据，若有过程线数据则提供3中json数据。文件夹目录结构同实际展示结果树一致。
+
+  ![image](./indexTree.png)
+
+该结构目录树对应文件夹结构如下：
++ <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>大坝
+    + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>三维
+        + 三维.txt
+    + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>0+414断面
+        + 0+414断面.txt
+
+
+**若存在结果步，则按下列结构存放文件：**
++ <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>建设期
+    + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>大坝
+        + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>三维
+            + 三维.txt
+        + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>0+414断面
+            + 0+414断面.txt
++ <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>运维期
+    + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>大坝
+        + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>三维
+            + 三维.txt
+        + <img src="./文件夹.png" alt="图片替换文本" width="20px" height="20px"/>0+414断面
+            + 0+414断面.txt
+> ### 2.基本信息、材料参数、荷载
   数组material存放不同的本构模型参数，根据实际计算情况添加；数组materialName长度需和数组1-6长度一致；load表示荷载信息，name、vaule数组可动态添加，长度保持一致。
 
 ```json
