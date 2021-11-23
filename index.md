@@ -1,4 +1,5 @@
 > ### 1.基本信息、材料参数、荷载
+  数组material存放不同的本构模型参数，根据实际计算情况添加；数组materialName长度需和数组1-6长度一致；load表示荷载信息，name、vaule数组可动态添加，长度保持一致。
 
 ```json
 {
@@ -89,7 +90,7 @@
 ![image](./arr56.png)
 
 > ### 2.结果过程线
-
+units数组长度为2，分别填写x、y轴单位； coordinate数组中一个对象对应一条曲线，顺序和lineName中名称一致，x、y分别是该曲线的x、y坐标数组，长度需一致。
 ```json
 {
     "lineResult": {
